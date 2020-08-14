@@ -12,10 +12,10 @@ In this simple tutorial we will show you a way to make the conversion between de
 The first thing we will do is to create a new variable. One of the main blocks is called VARIABLES.
 
 Select the VARIABLES block and then select MAKE A VARIABLE option.
-!["Make a Variable"](makevariable.png)
+!["Make a Variable"]( makevariable.png)
 
 When the option comes up to name your variable, use a name that will be meaningful to you. In this case we use "TempF" and select OK.
-!["Options after creating variable"](variablemade.png)
+!["Options after creating variable"]( variablemade.png)
 
 Once you create the variable you will then see that the VARIABLES block is now populated with more options. 
 
