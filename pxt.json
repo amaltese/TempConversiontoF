@@ -7,7 +7,8 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "TempConvTutorial.md"
     ],
     "testFiles": [
         "test.ts"
@@ -15,5 +16,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
