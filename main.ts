@@ -1,3 +1,5 @@
+let TempF = 0
 basic.forever(function () {
-    basic.showNumber(0)
+    TempF = 9 / 5 * input.temperature() + 32
+    basic.showNumber(TempF)
 })
