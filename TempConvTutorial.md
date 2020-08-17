@@ -13,6 +13,7 @@ The first thing we will do is to create a new variable. One of the main blocks i
 
 Select the VARIABLES block and then select MAKE A VARIABLE option.
 !["Make a Variable"](../images/makevariable.png)
+!["Working yet?"](.github/makecode/blocks.png)
 
 When the option comes up to name your variable, use a name that will be meaningful to you. In this case we use "TempF" and select OK.
 !["Options after creating variable"](variablemade.png)
@@ -32,14 +33,32 @@ Temperature (F) = 9/5(Temperature C) + 32
 If we go into the MATH block you'll see there are a number blocks that have two values and an operator (+, -, x, /).
 
 You can pick any of those blocks and drop it into the workspace. Click inside the first space in the block and type 9. Click inside the second space and type 5. Finally, change the operator between them by using the dropdown menu to the division symbol.
-[insert pictures]
+
+```blocks
+let TempF = 0
+basic.forever(function () {
+    TempF = 9 / 5
+})
+```
 
 Now repeat that procedure and grab another similar block from the MATH block. This time we're going to take the block we just created and drag that to fit that entire block within the first space of the new block. 
 Then go to the VARIABLE block and drag out the TempF block and drop it into the second space. Finally, change the operator to be an X for multiplying. It should look like below.  
-[insert pictures]
+
+```blocks
+let TempF = 0
+basic.forever(function () {
+    TempF = 9 / 5 * input.temperature()
+})
+```
 
 Now we need to repeat this same procedure a third (and final!) time. For this round we will drop the compound block you just created into the first space of the new block. Then in the second space, type 32. If you know a little about temperatures, you know that water freezes at 32 degrees F and 0 degrees C. This is why we need to add 32 to the formula! Change the operator so that it is a +. 
-[insert pictures]
+
+```blocks
+let TempF = 0
+basic.forever(function () {
+    TempF = 9 / 5 * input.temperature() + 32
+})
+```
 
 We now have the core of our code. 
 
